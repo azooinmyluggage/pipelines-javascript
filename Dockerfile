@@ -11,5 +11,7 @@ COPY . .
 # Install app dependencies
 RUN npm install
 
+RUN npm test
+
 EXPOSE 3000 80
 CMD ["npm", "start"]
